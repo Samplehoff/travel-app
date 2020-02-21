@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var placesKey = "AIzaSyBVXSDOOsztsFC2SSLf7kcxvLtVDgDwN3o"
+    var placesKey = "AIzaSyDtB1sgwdqbboYMS7j5HLROoyibk3wV7u0"
       var placeData=[];
       
      function renderAtt(arr){       //used vanilla javascript for rendering the bootstrap card using 
