@@ -1,3 +1,8 @@
+const express = require("express");
+const app = express();
+
+app.use(express.static(__dirname + '/public'));
+
 $(document).ready(function(){
     var placesKey = "AIzaSyDtB1sgwdqbboYMS7j5HLROoyibk3wV7u0"
       var placeData=[];
@@ -235,3 +240,9 @@ $(document).ready(function(){
     //   $(this).toggleClass("btn-secondary");
     // });
     })
+
+ 
+
+app.listen(process.env.PORT, function () {
+    console.log('server listening on port ' + process.env.PORT + ' app name= ' + process.env.PROJECT_NAME);
+  })
