@@ -8,7 +8,8 @@ app.get('/', function(res, req) {
     res.redirect('/public/index.html')
 })
 
+const PORT = process.env.PORT || 3000;
 
-app.listen(3001, function() {
+app.listen(PORT, function() {
     console.log("My Server is listening on port 3001!");
 });
